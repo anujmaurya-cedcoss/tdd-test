@@ -1,0 +1,27 @@
+<form action="/product/add" method="post">
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+        <input type="text" id="form2Example2" class="form-control" name='name' />
+        <label class="form-label" for="form2Example2">Name</label>
+    </div>
+
+    <div class="form-outline mb-4">
+        <input type="number" id="form2Example2" class="form-control" name='price' />
+        <label class="form-label" for="form2Example2">Price</label>
+    </div>
+
+    <div class="form-outline mb-4">
+        <input type="number" id="form2Example2" class="form-control" name='quantity' />
+        <label class="form-label" for="form2Example2">Quantity</label>
+    </div>
+
+    <label for="category">Choose a category:</label>
+
+    <select name="category" id="category">
+        <option value="Electronics">Electronics</option>
+        <option value="Jewellery">Jewellery</option>
+    </select>
+    <!-- Submit button -->
+    <input type="submit" class="btn btn-primary btn-block mb-4" value="Add Product">
+
+</form>
