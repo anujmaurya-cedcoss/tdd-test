@@ -26,6 +26,11 @@ class Users extends Model
                 ]
             )
         );
+        if (!filter_var($this->mail, FILTER_VALIDATE_EMAIL)) {
+            $this->appendMessage(
+                new Message("Email isn't valid")
+            );
+        }
 
         if ($this->name == '') {
             $this->appendMessage(
